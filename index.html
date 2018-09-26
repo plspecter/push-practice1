@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src = "assets/style/style.css"></script>
+    <script src = "assets/javascript/app.js"></script>
+    <title>Push practice</title>
+</head>
+
+<body>
+
+    <title>Sign up today</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <div class="container">
+        <!-- Jumbotron at the top -->
+        <div class="jumbotron">
+            <h1 class="text-center">Sign-Up Today!</h1>
+        </div>
+
+        <!-- New member sign up (top of the card) -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card card-default">
+                    <div class="card-header">
+                        New Member Sign Up
+                    </div>
+                    <!-- card body outlines the forms -->
+                    <div class="card-body">
+                        <!-- The actual sign up form to input informatio -->
+                        <form role="form">
+                            <div class="form-group row">
+                                <!-- The name of the form -->
+                                <label for="name-input">Name:</label>
+                                <!-- The form itself -->
+                                <input class="form-control" id="name-input" type="text">
+                            </div>
+                            <!-- Same thing but the title/id and type is different -->
+                            <div class="form-group row">
+                                <label for="email-input">Email:</label>
+                                <input class="form-control" id="email-input" type="email">
+                            </div>
+                            <div class="form-group row">
+                                <label for="age-input">Age:</label>
+                                <input class="form-control" id="age-input" type="number">
+                            </div>
+                            <div class="form-group row">
+                                <label for="comment-input">How did you hear about us?</label>
+                                <textarea class="form-control" id="comment-input" rows="5"></textarea>
+                            </div>
+                            <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+
+
+                        </form>
+
+
+                    </div>
+                </div>
+
+                <!-- Most Recent Member -->
+                <div class="col-lg-6">
+                    <div class="card card-default">
+                        <div class="card-header">
+                            Most Recent Member
+                        </div>
+                        <div class="card-body" id="recent-member">
+                            <h2 id="name-display"></h2>
+                            <h4 id="email-display"></h4>
+                            <h4 id="age-display"></h4>
+                            <p id="comment-display"></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
